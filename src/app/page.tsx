@@ -50,33 +50,35 @@ export default function HomePage() {
         <Services />
 
         {/* 5. About Section */}
-        <section id="about" className="py-16 sm:py-20 md:py-24 bg-[#F3EFEA] border-y border-[#E5DFD7]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-8 sm:gap-12 items-center">
-            <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border border-[#E5DFD7] shadow-lg bg-white">
-                <Image
-                  src="/images/dr-maya-reynolds.jpg"
-                  alt="Dr. Maya Reynolds, PsyD, Santa Monica Clinical Psychologist"
-                  width={560}
-                  height={560}
-                  className="w-full h-auto object-cover aspect-square"
-                />
-                <div className="p-3.5 sm:p-4 bg-white border-t border-[#E5DFD7]">
-                  <p className="text-sm font-bold text-[#3B5249]">Licensed Clinical Psychologist</p>
-                  <p className="text-xs text-[#5D6467]">Santa Monica, California • California Telehealth</p>
+        <section id="about" className="py-20 sm:py-24 bg-[#F3EFEA] border-y border-[#E5DFD7]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="w-full max-w-[440px] rounded-3xl overflow-hidden border border-[#E5DFD7] shadow-xl bg-white group">
+                <div className="relative aspect-[4/4.5] w-full overflow-hidden bg-[#EAE5DE]">
+                  <Image
+                    src="/images/dr-maya-reynolds.jpg"
+                    alt="Dr. Maya Reynolds, PsyD, Santa Monica Clinical Psychologist"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 440px"
+                    className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4 sm:p-5 bg-white border-t border-[#E5DFD7]">
+                  <p className="text-sm sm:text-base font-bold text-[#272A2B]">Licensed Clinical Psychologist</p>
+                  <p className="text-xs text-[#5D6467] mt-0.5">Santa Monica, California • California Telehealth</p>
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-4 sm:space-y-6">
+            <div className="lg:col-span-7 space-y-5 sm:space-y-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-[#3B5249] bg-[#E8EFEA] px-3.5 py-1.5 rounded-full">
                 Meet Your Psychologist
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#272A2B]">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#272A2B] tracking-tight">
                 About Dr. Maya Reynolds, PsyD
               </h2>
 
-              <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-[#5D6467] leading-relaxed">
+              <div className="space-y-4 text-sm sm:text-base text-[#5D6467] leading-relaxed">
                 <p>
                   Dr. Maya Reynolds is a Licensed Clinical Psychologist based in Santa Monica, California, providing dedicated psychotherapy for adults experiencing anxiety, panic, trauma, and burnout.
                 </p>
@@ -88,21 +90,21 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2">
-                <div className="p-3.5 sm:p-4 bg-white rounded-xl border border-[#E5DFD7]">
-                  <span className="text-xs text-[#838C90] uppercase font-bold tracking-wider block">Credentials</span>
-                  <span className="text-sm font-semibold text-[#272A2B]">Licensed Clinical Psychologist, PsyD</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 pt-2">
+                <div className="p-4 sm:p-5 bg-white rounded-2xl border border-[#E5DFD7] shadow-xs">
+                  <span className="text-[11px] text-[#838C90] uppercase font-bold tracking-wider block">Credentials</span>
+                  <span className="text-sm font-semibold text-[#272A2B] mt-1 block">Licensed Clinical Psychologist, PsyD</span>
                 </div>
-                <div className="p-3.5 sm:p-4 bg-white rounded-xl border border-[#E5DFD7]">
-                  <span className="text-xs text-[#838C90] uppercase font-bold tracking-wider block">Location</span>
-                  <span className="text-sm font-semibold text-[#272A2B]">Santa Monica Office &amp; Telehealth</span>
+                <div className="p-4 sm:p-5 bg-white rounded-2xl border border-[#E5DFD7] shadow-xs">
+                  <span className="text-[11px] text-[#838C90] uppercase font-bold tracking-wider block">Location</span>
+                  <span className="text-sm font-semibold text-[#272A2B] mt-1 block">Santa Monica Office &amp; Telehealth</span>
                 </div>
               </div>
 
               <div className="pt-2">
                 <a
                   href="#contact"
-                  className="inline-block text-center w-full sm:w-auto px-7 py-3.5 bg-[#3B5249] text-white font-semibold text-sm rounded-full shadow hover:bg-[#2D3F38] transition-all"
+                  className="inline-block text-center w-full sm:w-auto px-8 py-3.5 bg-[#3B5249] text-white font-semibold text-sm rounded-full shadow hover:bg-[#2D3F38] hover:shadow-md transition-all active:scale-95"
                 >
                   Schedule a Consultation
                 </a>
