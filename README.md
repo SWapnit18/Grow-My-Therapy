@@ -8,7 +8,7 @@ Built with Next.js (App Router), Tailwind CSS, and TypeScript, following modern 
 
 ## Live Demo & Deployment
 
-- Live Website: [https://grow-my-therapy.vercel.app](https://grow-my-therapy.vercel.app)
+- Live Website: [https://grow-my-therapy.vercel.app](https://grow-my-therapy-vert.vercel.app/)
 - GitHub Repository: [https://github.com/SWapnit18/Grow-My-Therapy](https://github.com/SWapnit18/Grow-My-Therapy)
 
 ---
