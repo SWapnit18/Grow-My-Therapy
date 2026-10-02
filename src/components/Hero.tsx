@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative py-12 sm:py-16 md:py-24 overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5] to-[#F5F1EB]">
+    <section id="hero" className="relative py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5] to-[#F5F1EB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-8 sm:gap-12 items-center">
         
         {/* Text column */}
@@ -54,21 +54,21 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Visual column */}
+        {/* Visual column: 4:3 rounded landscape with floating badge */}
         <div className="lg:col-span-5 relative mt-4 lg:mt-0">
-          <div className="relative rounded-2xl overflow-hidden border border-[#E5DFD7] shadow-lg sm:shadow-xl bg-[#EAE5DE] group">
+          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#E5DFD7] shadow-xl bg-[#EAE5DE] aspect-[4/3] group">
             <Image
               src="/images/dr-maya-reynolds.jpg"
               alt="Dr. Maya Reynolds, PsyD, Licensed Clinical Psychologist in Santa Monica"
-              width={600}
-              height={450}
+              fill
               priority
-              className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
             />
           </div>
 
-          {/* Reassurance card: relative on mobile, floating on tablet/desktop */}
-          <div className="mt-3 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-6 bg-white p-3.5 sm:p-4 rounded-xl shadow-md sm:shadow-lg border border-[#E5DFD7] flex items-center gap-3 sm:gap-3.5 sm:max-w-xs sm:animate-float">
+          {/* Floating reassurance badge */}
+          <div className="mt-3 sm:mt-0 sm:absolute sm:-bottom-5 sm:-left-5 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-xl shadow-lg border border-[#E5DFD7] flex items-center gap-3 sm:max-w-xs z-10 animate-float">
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#E8EFEA] text-[#3B5249] flex items-center justify-center shrink-0">
               <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
